@@ -1,0 +1,174 @@
+
+/*Definimos nuestra paleta de colores.*/
+:root{
+    /*Colores*/
+    --black: #211d1d;
+    --white: #e2e2e2;
+    --gray: #444444;
+    --blue-forte: #45818e;
+    --blue-light: #76a5af;
+    /*Tamaño de fuente*/
+    --ssm: 18px;
+    --sm: 18px;
+    --md: 26px;
+    --lg: 36px
+}
+
+body{
+    margin: 0 auto;/*0 de arriba y abajo y auto en los costados*/
+    background-color: var(--white);
+    font-family: 'Noto Sans', sans-serif;/*regla de uso de la fuente*/
+}
+
+.first-container{
+    margin: 16px auto;/*centrar un contenedor*/
+    padding: 20px;
+    width: 80%;
+    background-image: url(https://media.istockphoto.com/photos/machine-learning-hands-of-robot-and-human-touching-on-big-data-picture-id1206796363?s=612x612);
+    color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+}
+.title{
+    font-size: var(--lg);
+    margin: 0;
+}
+.job{
+    display: inline;
+}
+.programmer{/*gif de primera imagen*/
+    width: 56px;
+    margin-left: 16px;
+    border-radius: 4px;
+    position: relative;
+    top: 8px; /*margen de arriba*/
+}
+.subtitle{
+    font-size: var(--sm);
+}
+.navbar{/*estilo de la barra de navegacion*/
+    width: 30%;
+    margin: 12px auto;
+    border-radius: 20px;
+    display: flex;/*acomodar los estilos de modo flexible*/
+    align-items: center;/*cenra de arriba hacia abajo*/
+    position: fixed;/*deja el elemento en la posicion inical*/
+}
+.navbar ul{
+    list-style-type: none;/*se le quita el punto a la lista del navbar*/
+    margin: 15px;
+    padding: 0;
+    overflow: hidden;/*oculta elementos como li,a,img; para que no salgan del contenedor de la */
+    background-color: var(--gray);
+    border-radius: 16px;
+}
+.navbar li a{/*accedo a los <a> dentro de los li*/
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 16px;/*en los botones ayuda a que tenga un buen margen*/
+    text-decoration: none;/*quita los subrrayados de los texto de navegacion*/
+}
+.navbar li a:hover{/*esto sucederá al poner el cursor encima*/
+    color: var(--blue-light);
+    background-color: var(--black);
+}
+
+/*estilo de "informacion sobre mi"*/
+.second-container{
+    display: grid;/*genera grids(separaciones) y ocupan un porcentaje a lo alto y ancho*/
+    grid-template-columns: 20% 80%;/*podemos dividir en dos partes el contenedor*/
+    align-items: center;
+    margin: 40px auto;
+    width: 70%;
+    /*tamaño, tipo y color*/
+    border-top: 4px solid var(--gray);
+    border-bottom: 4px solid var(--gray);
+    /*izq superior,  derecha superior, derecha inferior, izquierda inferior*/
+    border-radius: 0px 28px 0px 28px;
+}
+.nina{
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--gray);
+    margin: 20px auto;
+}
+
+.about-me{
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    font-size: var(--sm);
+    margin: 20px;
+}
+.first-text{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.second-text{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.rocket, .social{
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+}
+
+.third-container{
+    color: var(--white);
+    width: 70%;
+    margin: 24px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 40px;
+}
+
+.hobbies, .abilities, .languages{
+    margin: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: var(--gray);
+    border-radius: 16px;
+    font-size: var(--ssm);
+}
+.hobbies:hover, .abilities:hover, .languages:hover{
+    color: var(--blue-light);
+    background-color: var(--black);
+
+}
+.fourth-container{
+    width: 70%;
+    margin: 20px auto;
+    font-size: var(--ssm);
+    text-align: center;
+}
+.imgViajes{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.viaje{
+    border-radius: 50%;
+    width: 350px;
+    height: 300px;
+    margin: 12px auto;
+    object-fit: cover;
+}
+
+.fifth-container{
+    background-color: var(--black);
+    color: var(--white);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+}
+.fifth-container:hover{
+    color: var(--blue-light);
+}
+.fb, .ins{
+    width: 70px;
+    margin: 0 auto;
+}
